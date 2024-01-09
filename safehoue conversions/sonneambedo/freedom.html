@@ -1,0 +1,245 @@
+<!--
+
+frankensteining and modifying okay,  as long as you keep all creators' credits.
+
+accent color 1:  (red)
+accent color 2:  (teal)
+accent font: georgia
+
+table border color: ffffff
+table font: book antiqua
+
+-->
+
+<!-- background color -->
+<div style="position:absolute;top:0;bottom:0;left:0; background-color:{{c!Background Colour!}}; width:100%; z-index:-1;"></div>
+   
+<div class="container" style="background:{{c!Background Colour!}}; color:{{c!Text Colour!}};">
+
+<!-- name surname -->
+<div class="row">
+    
+    <div class="col p-2 pb-4 text-center">
+        
+        <p class="font-italic" style="color: {{c!Second Accent Colour!}}; text-shadow:5px 10px 0px {{c!First Accent Colour!}}; font-family:georgia; font-size:2rem;">
+            {{!Character Name!}}
+        </p>
+        
+    </div>
+    
+</div>
+	
+<!-- content -->
+<div class="row">
+
+<!-- column 1 -->
+		<div class="col-md-4">
+		    
+<!-- title: about -->
+<div class="card my-1 bg-transparent text-center rounded-0 border-top-0 border-left-0 border-right-0" style="border-bottom:20px solid {{c!First Accent Colour!}}; font-family:georgia; font-size:1rem;">
+    about.
+</div>
+
+<!-- table: basic information -->
+      {{%%Table%
+<div style="font-family:book antiqua;">
+<div class="row mx-0 my-2" style="border-bottom:1px solid {{c!Table Border Colour!}};">
+    
+    <div class="col-md-4">age.</div>
+    
+    <div class="col"> {{%Age%}}</div>
+    
+</div>
+
+<div class="row mx-0 my-2" style="border-bottom:1px solid {{c!Table Border Colour!}};">
+    
+    <div class="col-md-4">brithdate.</div>
+    
+    <div class="col">{{%Birth Date%}}</div>
+    
+</div>
+
+<div class="row mx-0 my-2" style="border-bottom:1px solid {{c!Table Border Colour!}};">
+    
+    <div class="col-md-4">gender.</div>
+    
+    <div class="col"> {{%Gender%}}</div>
+    
+</div>
+
+
+<div class="row mx-0 my-2" style="border-bottom:1px solid {{c!Table Border Colour!}};">
+    
+    <div class="col-md-4">sexuality.</div>
+    
+    <div class="col"> {{%Sexuality%}}</div>
+    
+</div>
+
+
+<div class="row mx-0 my-2" style="border-bottom:1px solid {{c!Table Border Colour!}};">
+    
+    <div class="col-md-4">languages.</div>
+    
+    <div class="col"> {{%Language%}}</div>
+    
+</div>
+</div>
+      %end%}}
+
+<!-- image 1 -->
+<div class="text-center">
+<img class="my-2" src="{{u!First Image!}}" width="80%" />
+</div>
+
+<!-- accent text 1 -->
+<p class="my-2 text-center" style="font-family:georgia; font-size:1.3rem;"> {{!First Normal Accent Text!}} <b style=" font-size:1.6rem; color:{{c!Second Accent Colour!}}; letter-spacing:1px;">{{!First Bolded Accent Text!}}</b>.</p>
+
+<!-- summary -->
+			<div class="card rounded-0 bg-transparent my-2" style="border:1px solid {{c!First Accent Colour!}};">
+				<h5 class="card-header text-center" style="background:{{c!First Accent Colour!}}; font-family:georgia">
+					{{!Brief Summary!}}
+				</h5>
+				<div class="card-body p-2" style="height:200px; overflow-y:auto;">
+					<p class="card-text">
+					    {{l!Full Summary!}}
+					</p>
+				</div>
+			</div>
+
+</div>
+
+<!-- column 2 -->
+		<div class="col-md-4 mt-md-5">
+		    
+<!-- image 2: focal image -->
+<div class="text-center my-2" style="border:20px solid {{c!Second Accent Colour!}}; background:{{c!Second Accent Colour!}}">
+<img src="{{u!Second Image!}}" />
+</div>
+
+<!-- backstory -->
+			<div class="card rounded-0 bg-transparent my-2" style="border:1px solid {{c!First Accent Colour!}};">
+				<h5 class="card-header text-center" style="background:{{c!First Accent Colour!}}; font-family:georgia">
+					{{!Brief Backstory!}}
+				</h5>
+				<div class="card-body p-2" style="height:200px; overflow-y:auto;">
+					<p class="card-text">
+						{{l!Full Backstory!}}
+					</p>
+				</div>
+			</div>
+
+<!-- accent text 2 -->
+<p class="my-2 text-center" style="font-family:georgia; font-size:1.3rem;"> {{!Second Normal Accent Text!}} <b style=" font-size:1.6rem; color:{{c!Second Accent Colour!}}; letter-spacing:1px;">{{!Second Bolded Accent Text!}}</b></p>
+
+		</div>
+
+<!-- column 3 -->
+		<div class="col-md-4">
+
+
+<!-- title: appearance -->
+<div class="card my-1 bg-transparent text-center rounded-0 border-top-0 border-left-0 border-right-0" style="border-bottom:20px solid {{c!First Accent Colour!}}; font-family:georgia; font-size:1rem;">
+    appearance.
+</div>
+
+<!-- table: basic information -->
+      {{%%Appearance Table%
+<div style="font-family:book antiqua;">
+<div class="row mx-0 my-2" style="border-bottom:1px solid {{c!Table Border Colour!}};">
+    
+    <div class="col-md-4">height.</div>
+    
+    <div class="col"> {{%Height%}}</div>
+    
+</div>
+
+<div class="row mx-0 my-2" style="border-bottom:1px solid {{c!Table Border Colour!}};">
+    
+    <div class="col-md-4">weight.</div>
+    
+    <div class="col">{{%%Weight%}}</div>
+    
+</div>
+
+<div class="row mx-0 my-2" style="border-bottom:1px solid {{c!Table Border Colour!}};">
+    
+    <div class="col-md-4">eyes.</div>
+    
+    <div class="col"> {{%Eyes%}}</div>
+    
+</div>
+
+
+<div class="row mx-0 my-2" style="border-bottom:1px solid {{c!Table Border Colour!}};">
+    
+    <div class="col-md-4">hair.</div>
+    
+    <div class="col"> {{%Hair%}}</div>
+    
+</div>
+
+
+<div class="row mx-0 my-2" style="border-bottom:1px solid {{c!Table Border Colour!}};">
+    
+    <div class="col-md-4">skin.</div>
+    
+    <div class="col"> {{%Skin%}}</div>
+    
+</div>
+</div>
+      %end%}}
+
+<!-- accent text 3 -->
+<p class="my-2 text-center" style="font-family:georgia; font-size:1.3rem;"> {{!Third Normal Accent Text!}} <b style=" font-size:1.6rem; color:{{c!Second Accent Colour!}}; letter-spacing:1px;">{{!Third Bolded Accent Text!}}</b>.</p>
+
+<!-- image 3 -->
+<div class="text-center">
+<img class="my-2" src="{{u!Third Image!}}" width="80%" />
+</div>
+
+<!-- summary -->
+			<div class="card rounded-0 bg-transparent my-2" style="border:1px solid {{c!First Accent Colour!}};">
+				<h5 class="card-header text-center" style="background:{{c!First Accent Colour!}}; font-family:georgia">
+					hooks.
+				</h5>
+				<div class="card-body p-2" style="height:200px; overflow-y:auto;">
+<ul class="fa-ul mb-0">
+  {{%Hooks%  
+  <li> <span class="fa-li"><i class="{{i%Hook Icon%}}"></i></span>
+        {{%Hook%}}
+	</li>
+   %end%}}
+</ul>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+<!-- beeg image + quote -->
+<div class="card my-3 bg-transparent rounded-0" style="border:1px solid {{c!First Accent Colour!}};">
+    
+    <div class="card-header p-2 text-center" style="background:{{c!First Accent Colour!}};">
+
+        <img src="{{u!First Big Image!}}">
+
+    </div>
+    
+    <div class="card-text p-2">
+{{%%Quote%
+<p class="text-right font-italic" style="font-family:georgia; font-size:1.3rem;"> "{{%First Normal Quote Text%}} <b style=" font-size:1.6rem; color:{{c!First Accent Colour!}}; letter-spacing:1px;">{{%First Bolded Quote Text%}}</b> {{%Second Normal Quote Text%}} <b style=" font-size:1.6rem; color:{{c!Second Accent Colour!}}; letter-spacing:1px;">{{%Second Bolded Quote Text%}}</b> {{%Third Normal Quote Text%}} <b style=" font-size:1.6rem; color:{{c!First Accent Colour!}}; letter-spacing:1px;">{{%Third Bold Quote Text%}}</b> {{%Fourth Normal Quote Text%}}"</p>
+      %end%}}
+
+    </div>
+    
+</div>
+
+<!-- credits -->
+<div class="row my-2 mx-0 align-items-center">
+    
+    <div class="col" style="border-top: 1px solid {{c!First Accent Colour!}}"></div>
+    <span class="mx-2 font-italic">code by @sonneambedo; <b>heavily</b> inspired by <a href="https://www.tumblr.com/kissingunderwillowtrees/689791195595128832/1-with-my-own-eyes?source=share"> this doc layout </a></span>
+    
+</div>
+</div>

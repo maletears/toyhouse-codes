@@ -1,0 +1,93 @@
+<!-- 
+rules for using:
+△ turn off WYSIWYG
+△ feel free to edit and frankenstein as much as you want to, as long as you keep the credit of whoever's code you're using - including my own
+△ do NOT use it as a base for paid codes
+ 
+colors used:
+#675199 - card border
+#c9b3ff - header text
+#ffffff - text
+#a17ff0 - icons/hr
+-->
+
+<!-- 
+image that spans the width of the page 
+-->
+<div class="p-2" style="background: url({{u!Background Image URL!}}) top fixed no-repeat; background-size: cover; ">
+
+<!-- 
+container
+-->
+<div class="col-lg-4 px-3 mx-auto">
+    
+<hr width="50%" noshade style="border-color:{{c!Rule and Icon Colour!}};" align="center" />
+
+<!-- 
+card & border
+-->
+<div class="p-2 text-center rounded" style="background-color:rgba(0,0,0,.5); color:{{c!Text Colour!}};">
+    
+<!-- 
+image
+-->
+    <div class="card bg-transparent" style="border-color:{{c!Card Border Colour!}};">
+        <div class="row no-gutters border-0" style="height:150px; background: url({{u!Image URL!}}) center no-repeat; background-size: cover;">
+        </div>
+        
+<!-- 
+content
+-->
+        <div class="row no-gutters bg-transparent border-0" style="color:#000000">
+          <div class="col px-2 pb-2">
+<hr width="50%" noshade style="border-color:{{c!Rule and Icon Colour!}};" align="center" />
+<!-- 
+basic info
+-->
+            {{?Show or Hide?
+            <p align="center" style="color:{{c!Header Colour!}}; font-variant:small-caps; font-weight: 400; font-size:1.3rem;"> {{!Header Text!}}</p>
+            ?end?}}
+<!-- 
+about - box grows the more text is in it
+-->
+            {{?Show or Hide?
+            <p align="center" style="color:{{c!Text Colour!}};; font-weight: 400;"> {{l!Description!}}
+            </p>
+            ?end?}}
+            <br>
+<!-- 
+social media links
+-->
+            {{?Show or Hide?
+<div class="row px-2 pb-2">
+  {{%%Social Links%
+  <div class="col">
+<a href="{{u%Social Link%}}" title="{{%Link Title%}}"><i class="{{i%Social Link Icon%}}" style="color: {{c!Header Colour!}}; font-size: 1.5rem;"></i></a>
+  </div>
+    <div class="col">
+ <a href="{{u%Social Link%}}" title="{{%Link Title%}}"><i class="{{i%Social Link Icon%}}" style="color: {{c!Header Colour!}}; font-size: 1.5rem;"></i></a>
+  </div>
+    <div class="col">
+ <a href="{{u%Social Link%}}" title="{{%Link Title%}}"><i class="{{i%Social Link Icon%}}" style="color: {{c!Header Colour!}}; font-size: 1.5rem;"></i></a>
+  </div>
+  <div class="col">
+ <a href="{{u%Social Link%}}" title="{{%Link Title%}}y"><i class="{{i%Social Link Icon%}}" style="color: {{c!Header Colour!}}; font-size: 1.5rem;"></i></a>
+  </div>
+  %end%}}
+  </div>
+            ?end?}}
+</div>
+            </div>
+          </div>
+        </div>
+
+
+<hr width="50%" noshade style="border-color:{{c!Rule and Icon Colour!}};" align="center" />
+
+<!-- 
+credit
+-->
+<p align="center"><a href="https://toyhou.se/sonneambedo" title="code by s☼nne"><i class="fas fa-sun" style="color:#FFD700"></i></a></p>
+    
+</div>
+</div>

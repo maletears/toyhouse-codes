@@ -1,0 +1,53 @@
+<div class="container" style="width: 75%;">
+<div class="mb-3">
+	<h2 class="text-center" style="font-style: italic;"><span class="rounded" style="padding: 0.5% 0.5% 0.5% 0.5%; background-color: {{c!First Colour!}};"><i class="fa-solid {{i!Character Icon!}}"></i></span> {{!Title!}}</h2>
+</div>
+<div class="container text-center" style="font-size:12px;">
+	<div class="card mb-2" style="padding:2%; background-color: {{c!Second Colour!}};"></div>
+	<div class="row">
+		<div class="col-4 mb-2"><img src="{{u!Image URL!}}" class="rounded img-fluid" alt="{{!Image Alt!}}" style="height: 150px;"></div>
+		<div class="col-3" style="text-align:justify;">
+      {{%Basic Information%
+			<div class="mb-2"><span class="rounded {{c!Second Colour!}}" style="padding: 1% 3% 1% 3%; font-weight: bold; text-transform: uppercase;">{{%Stat%}}</span> <i>{{%Value%}}</i></div>
+      %end%}}
+		</div>
+		<div class="col-5" style="text-align: justify;"> {{l!First Long Description!}} </div>
+	</div>
+</div>
+<div class="container text-center mb-2" style="font-size:12px;">
+	<div class="card mb-2" style="padding:2%; background-color: {{c!First Colour!}};"></div>
+	<div class="row">
+		<div class="col" style="text-align: justify;"> {{l!Second Long Description!}} </div>
+		<div class="col" style="text-align: justify;"> {{l!Third Long Description!}} </div>
+	</div>
+</div>
+<div class="container text-center" style="font-size:12px;">
+	<div class="card mb-2" style="padding:2%; background-color: {{c!Second Colour!}};"></div>
+	<div class="row">
+		<div class="col">
+			<div class="mb-2">
+				<h4 class="text-center" style="font-style: italic;"><span class="rounded" style="padding: 0.5% 0.5% 0.5% 0.5%; background-color: {{c!First Colour!}};"><i class="fa-solid fa-heart"></i></span> Likes</h2>
+			</div>
+			<ul style="list-style:none;">
+        {{%Likes%
+				<li>{{%Like%}}</li>
+        %end%}}
+			</ul>
+		</div>
+		<div class="col">
+			<div class="mb-2">
+				<h4 class="text-center" style="font-style: italic;"><span class="rounded" style="padding: 0.5% 0.5% 0.5% 0.5%; background-color: {{c!First Colour!}};"><i class="fa-solid fa-heart-crack"></i></span> Dislikes</h2>
+			</div>
+			<ul style="list-style:none;">
+        {{%Dislikes%
+				<li>{{%Dislike%}}</li>
+				%end%}}
+			</ul>
+		</div>
+	</div>
+	<div class="card mb-1" style="padding:0.75%; background-color: {{c!First Colour!}};"></div>
+	<div class="card mb-1" style="padding:0.5%; background-color: {{c!Second Colour!}};"></div>
+	<div class="card mb-1" style="padding:0.25%; background-color: {{c!Third Colour!}};"></div>
+</div>
+<div style="font-size: 10px;" class="text-center"><a href="https://toyhou.se/faerieboo" style="color: {{c!Third Colour!}};" data-toggle="tooltip" title="Coding by faerieboo"><i class="fa-solid fa-ghost"></i></a></div>
+</div>

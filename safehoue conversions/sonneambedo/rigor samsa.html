@@ -1,0 +1,210 @@
+<!-- 
+rules for using:
+△ turn off WYSIWYG
+△ feel free to edit and frankenstein as much as you want to, as long as you keep the credit of whoever's code you're using - including my own
+△ do NOT use it as a base for paid codes
+
+-->
+
+<!-- image that spans the width of the page -->
+<div class="p-2" style="background: url({{u!Background Image!}}) center fixed no-repeat; background-size: cover; ">
+
+<!-- container -->
+<div class="col-12 col-sm-7 px-3 mx-auto">
+
+<!-- 
+half-transparent bg
+-->
+<div class="p-2 text-center rounded" style="background-color:rgba(0,0,0,.8); color:{{c!Text Colour!}}; border-radius:0rem;">
+    
+<!--  border -->   
+<div class="card bg-transparent" style="border-color:{{c!Accent Colour!}}; border-radius:0rem;">
+
+<!--  if you don't like stuff poppin' out of borders, add mx-1 after row in the class attribute -->        
+<div class="row">
+
+<!--  image --> 
+  {{%%Image%
+<div class="col-0 col-sm-5 p-1" style="background: url({{u%Image URL%}}) center; background-size: cover;">
+    
+        <!-- image credits -->   
+         <a class="tooltipster" title="{{%Image Type%}} by {{%Artist Name%}}" href="{{u%Artist URL%}}">
+             <i class="{{i!Icon!}} float-left ml-3" style="color:{{c!Text Colour!}}; font-size:1rem; z-index:1;"></i>
+        </a>
+%end%}}
+</div>
+
+<!--  content -->
+<div class="col-12 col-sm-7 p-2 py-3">
+<!-- 
+basic info
+-->
+
+    <div class="card bg-transparent border-0 align-items-center justify-content-center">
+        <p style="color:{{c!Text Colour!}}; font-variant:small-caps; font-weight: 400; font-size:1.3rem;">
+        {{!Character Name!}} <i class="{{i!Icon!}}" style="color:{{c!Accent Colour!}};"></i> {{!Character Age!}} <i class="{{i!Icon!}}" style="color:{{c!Accent Colour!}};"></i> {{!Character Gender!}}
+        </p>
+        </div>
+
+
+<hr width="80%" style="border-color:{{c!Accent Colour!}}" align="center" />
+
+<!--  about -->
+<div class="card bg-transparent border-0">
+<b class="m-0" align="center" style="color:{{c!Accent Colour!}}; font-variant:small-caps; font-weight: 400; font-size:1.3rem;"> About </b>
+
+<!-- box will scroll once filled -->
+<div class="card bg-transparent p-1 mx-3 border-0" align="center" style="color:{{c!Text Colour!}}; font-weight: 400; max-height:150px; overflow-y:auto;">
+                <p>{{l!About Description!}}</p></div>
+</div>
+            
+<hr width="80%" style="border-color:{{c!Accent Colour!}}" align="center" />
+
+<!-- stats -->
+    <div class="card bg-transparent border-0 mx-2">
+        <b class="m-0" align="center" style="color:{{c!Accent Colour!}}; font-variant:small-caps; font-weight: 400; font-size:1.3rem;"> Stats </b>
+            <div class="card m-0 bg-transparent p-1 border-0" align="center" style="color:{{c!Text Colour!}}; font-weight: 400;">
+
+<!-- physical -->
+<div class="card-body">
+<div class="row">
+  <div class="col">
+    <div class="card p-2 bg-transparent border-0 border-0">
+      <div class="card-body align-items-center">
+        <span style="font-variant:small-caps; font-size:18px;">Strength</span>
+        <span class="col mx-2 bg-transparent" style="padding: .5px"></span>
+        <span style="font-weight: 100; font-size: 15px; letter-spacing: 3px;">
+          {{%Strength Stat%
+            <i class="{{i!Icon!}}" style="color:{{c!Accent Colour!}}"></i>%end%}}
+            </span>
+        </div>
+    </div>
+  </div>
+</div>
+ <div class="row">
+  <div class="col">
+    <div class="card p-2 bg-transparent border-0">
+      <div class="card-body align-items-center">
+        <span style="font-variant:small-caps; font-size:18px;">Agility</span>
+        <span class="col mx-2 bg-transparent" style="padding: .5px"></span>
+        <span style="font-weight: 100; font-size: 15px; letter-spacing: 3px;">
+          {{%Agility Stat%
+            <i class="{{i!Icon!}}" style="color:{{c!Accent Colour!}}"></i>%end%}}
+        </span>
+        </div>
+    </div>
+  </div>
+</div>
+ <div class="row">
+  <div class="col">
+    <div class="card p-2 bg-transparent border-0">
+      <div class="card-body align-items-center">
+        <span style="font-variant:small-caps; font-size:18px;">Stamina</span>
+        <span class="col mx-2 bg-transparent" style="padding: .5px"></span>
+        <span style="font-weight: 100; font-size: 15px; letter-spacing: 3px;">
+          {{%Stamina Stat%
+            <i class="{{i!Icon!}}" style="color:{{c!Accent Colour!}}"></i>%end%}}
+        </span>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="card p-2 bg-transparent border-0 border-0">
+      <div class="card-body align-items-center">
+        <span style="font-variant:small-caps; font-size:18px;">Versatility</span>
+        <span class="col mx-2 bg-transparent" style="padding: .5px"></span>
+        <span style="font-weight: 100; font-size: 15px; letter-spacing: 3px;">
+          {{%Versatility Stat%
+            <i class="{{i!Icon!}}" style="color:{{c!Accent Colour!}}"></i>%end%}}
+        </span>
+        </div>
+    </div>
+  </div>
+</div>
+
+<hr width="30%" style="border-color:{{c!Accent Colour!}}" align="center" />
+
+<!-- mental -->
+<div class="row">
+  <div class="col">
+    <div class="card p-2 bg-transparent border-0 border-0">
+      <div class="card-body align-items-center">
+        <span style="font-variant:small-caps; font-size:18px;">Patience</span>
+        <span class="col mx-2 bg-transparent" style="padding: .5px"></span>
+        <span style="font-weight: 100; font-size: 15px; letter-spacing: 3px;">
+          {{%Patience Stat%
+            <i class="{{i!Icon!}}" style="color:{{c!Accent Colour!}}"></i>%end%}}
+        </span>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="card p-2 bg-transparent border-0 border-0">
+      <div class="card-body align-items-center">
+        <span style="font-variant:small-caps; font-size:18px;">Humour</span>
+        <span class="col mx-2 bg-transparent" style="padding: .5px"></span>
+        <span style="font-weight: 100; font-size: 15px; letter-spacing: 3px;">
+          {{%Humour Stat%
+            <i class="{{i!Icon!}}" style="color:{{c!Accent Colour!}}"></i>%end%}}
+        </span>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="card p-2 bg-transparent border-0 border-0">
+      <div class="card-body align-items-center">
+        <span style="font-variant:small-caps; font-size:18px;">Optimism</span>
+        <span class="col mx-2 bg-transparent" style="padding: .5px"></span>
+        <span style="font-weight: 100; font-size: 15px; letter-spacing: 3px;">
+          {{%Optimism Stat%
+            <i class="{{i!Icon!}}" style="color:{{c!Accent Colour!}}"></i>%end%}}
+        </span>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="card p-2 bg-transparent border-0 border-0">
+      <div class="card-body align-items-center">
+        {{%%Custom Stat Group%
+        <span style="font-variant:small-caps; font-size:18px;">{{!Custom Stat Name!}}</span>
+        <span class="col mx-2 bg-transparent" style="padding: .5px"></span>
+        <span style="font-weight: 100; font-size: 15px; letter-spacing: 3px;">
+          {{%Custom Stat%
+            <i class="{{i!Icon!}}" style="color:{{c!Accent Colour!}}"></i>%end%}}
+        </span>
+        %end%}}
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+            </div>
+            </div>
+
+
+            </div>
+          </div>
+        </div>
+
+</div>
+</div>
+
+<!--  credit -->
+<p class="pt-1" align="center">
+    
+    <!-- code -->
+    <a href="https://toyhou.se/sonneambedo" class="tooltipster" title="code by s☼nne"><i class="fas fa-sun" style="color:#FFD700"></i></a>
+    <i class="fal fa-horizontal-rule mx-2"></i>
+    <!-- background -->
+    <a href="{{u!Background Image Credit URL!}}" class="tooltipster" title="background from {{!Place You Got The Background!}}"><i class="fas fa-image" style="color:{{c!Text Colour!}}"></i></a></p>
+
+</div>

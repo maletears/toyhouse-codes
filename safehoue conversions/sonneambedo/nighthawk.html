@@ -1,0 +1,264 @@
+<!-- 
+by using this code you agree to my ToS :)
+
+how to add music: upload the file to discord, dropbox or some other site that lets you have the link to the file end in .mp3; use that link to replace links that are already in the code.
+    i left the music that was in the preview code for easier navigation.
+
+-->
+
+<div class="container-fluid" style="color:#ffffff">
+    
+    <div class="row">
+<!-- first character -->        
+<div class="col-12 col-md-3 p-3">
+    
+    <!-- first character's likes -->
+   <p align="right"><a class="btn btn-default border-0 nav-link bg-transparent bg-transparent" style="color:#ffffff; width:1px; height:1px;"  data-toggle="collapse" href="#likes_one" role="button" aria-expandaced="false" aria-controls="collapseExample">
+    <i class="fad fa-heart-half-stroke tooltipster" data-placement="left" title="{{!First Character Name!}}'s likes" style="font-size:3rem; margin-right:-60px; z-index:1; color:{{c!First Character Colour!}}; text-shadow: 0 0 10px #000000, 0 0 0px #000000, 0 0 0px #000000, 0 0 10px #000000;"></i>
+    </a></p> 
+    
+    <img src="{{u!First Character Image!}}" width="300">
+    
+    <!-- first character trivia -->
+    <p align="right"><a class="btn btn-default border-0 nav-link bg-transparent" style="color:#ffffff; width:1px; height:1px;" data-toggle="collapse" href="#interests_one" role="button" aria-expanded="false" aria-controls="collapseExample">
+    <i class="{{i!First Character Icon!}} tooltipster" data-placement="left" title="{{!First Character Name!}}'s trivia" style="font-size:3rem; margin-right:-60px; margin-top:-150px; z-index:1; color:{{c!First Character Colour!}}; text-shadow: 0 0 10px #000000, 0 0 0px #000000, 0 0 0px #000000, 0 0 10px #000000;"></i>
+</a></p> 
+
+</div>
+
+<!-- middle row - backround -->
+<div class="col-12 col-md-6 p-3 bg-dark" style="background: url({{u!Background Image!}}) center fixed; background-size: cover; color:#ffffff; border-radius:0rem;">
+    
+<!-- first character's name -->
+<div class="row">
+  <div class="col">
+    <div class="card p-2 bg-transparent border-0 border-0">
+      <div class="card-body align-items-center">
+        <span class="col mx-2" style="padding: .5px; background-color:{{c!Background Colour!}}"></span>
+        <span class="font-italic" style="font-variant:small-caps; font-size:1.5rem; color:{{c!First Character Colour!}}; text-shadow: 0 0 10px #000000, 0 0 0px #000000, 0 0 0px #000000, 0 0 10px #000000;">{{!First Character Name!}}</span>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- first character's quote -->    
+        <div class="card p-2 pl-5" style="clip-path: polygon(100% 0, 100% 100%, 5% 100%, 5% 85%, 0 85%, 5% 64%, 5% 0); max-height:100px; background-color:{{c!Background Colour!}}; border-radius:0rem;">
+        {{l!First Character Quote!}}
+        
+    </div>
+
+<!-- second character's name -->
+<div class="row">
+  <div class="col">
+    <div class="card p-2 bg-transparent border-0 border-0">
+      <div class="card-body align-items-center">
+        <span class="font-weight-bold" style="font-variant:small-caps; font-size:1.5rem; color:{{c!Second Character Colour!}}; text-shadow: 0 0 10px #000000, 0 0 0px #000000, 0 0 0px #000000, 0 0 10px #000000;">{{!Second Character Name!}}</span>
+        <span class="col mx-2" style="padding: .5px; background-color:{{c!Background Colour!}}"></span>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- second character's quote -->
+    <div class="card p-2 pr-5" style="clip-path: polygon(95% 0, 95% 20%, 100% 20%, 95% 40%, 95% 100%, 0 100%, 0 0); max-height:100px; background-color:{{c!Background Colour!}}; border-radius:0rem;">
+        {{l!Second Character Quote!}}
+        
+    </div>
+    
+<hr width="50%" noshade style="color:#ffffff" align="center" />
+
+<div class="card-deck mx-3">
+
+<!-- mutual playlist -->
+<div class="card" style="background-color:{{c!Background Colour!}}; border-radius:0rem;">
+<p align="right" class="pr-2 pt-2" style="font-variant:small-caps; font-size:1.2rem;">Playlist</p>
+<hr width="50%" noshade style="color:#ffffff" align="right" class="mr-2" />
+
+<!-- second character's songs -->
+  {{%Second Character Songs%
+<div class="row py-2">
+  <div class="col">
+    <div class="card bg-transparent border-0">
+      <div class="card-body">
+<span class="align-items-start">
+<div class="container">
+    <div class="overflow-hidden" style="width: 50px; position: absolute; top:-20px; left:5px; z-index: 101;">
+          <audio controls="" style="opacity:0; width:300px; height:50px;">
+            <source src="{{u%Second Character Song URL%}}">
+          </audio>
+    </div>
+          <i class="fas fa-play" style="color:{{c!Second Character Colour!}}; font-size:1.5rem;"></i>
+          <p class="float-right font-weight-bold"> {{%Second Character Song Name%}} </p>
+</div>
+</span>
+        </div>
+    </div>
+  </div>
+</div>
+  %end%}}
+
+<!-- mutual song -->
+  {{%Mutual Songs%
+<div class="row py-2">
+  <div class="col">
+    <div class="card bg-transparent border-0">
+      <div class="card-body">
+<span class="align-items-start">
+<div class="container">
+    <div class="overflow-hidden" style="width: 50px; position: absolute; top:-20px; left:5px; z-index: 101;">
+          <audio controls="" style="opacity:0; width:300px; height:50px;">
+            <source src="{{u%Mutual Song URL%}}">
+          </audio>
+    </div>
+          <i class="fas fa-play" style="color:{{c!Mutual Character Colour!}}; font-size:1.5rem;"></i>
+          <p class="float-right" style="letter-spacing:1px;"> {{%Mutual Song Name%}} </p>
+</div>
+</span>
+        </div>
+    </div>
+  </div>
+</div>
+  %end%}}
+
+<!-- first character's songs -->
+  {{%First Character Songs%
+<div class="row py-2">
+  <div class="col">
+    <div class="card bg-transparent border-0">
+      <div class="card-body">
+<span class="align-items-start">
+<div class="container">
+    <div class="overflow-hidden" style="width: 50px; position: absolute; top:-20px; left:5px; z-index: 101;">
+          <audio controls="" style="opacity:0; width:300px; height:50px;">
+            <source src="{{u%First Character Song URL%}}">
+          </audio>
+    </div>
+          <i class="fas fa-play" style="color:{{c!First Character Colour!}}; font-size:1.5rem;"></i>
+          <p class="float-right font-italic"> {{%First Character Song Name%}} </p>
+</div>
+</span>
+        </div>
+    </div>
+  </div>
+</div>
+  %end%}}
+
+        
+    </div>
+
+<!-- dynamic -->    
+    <div class="card p-2" style="background-color:{{c!Background Colour!}}; border-radius:0rem;">
+            <p style="font-variant:small-caps; font-size:1.2rem;">Dynamic</p>
+            <hr width="50%" noshade style="color:#ffffff" align="left" />
+
+<!-- Stats -->
+      {{%Stats%
+                                <div class="row no-gutters">
+                                    <div class="col align-items-center justify-content-center">
+                                        <p>{{{%Left Stat%}}</p>
+                                    </div>
+                                    <div class="col-6 align-items-center" style="position: relative;">
+                                        <div class="w-100" style="height: 2px; background-color:rgba(255,255,255,.5);"></div>
+                                        <i class="{{i!Second Character Icon!}} tooltipster" title="{{!Second Character Name!}}" style="font-size:1rem; position: absolute; left: calc({{n%Second Character Value%}}%); color: {{c!Second Character Colour!}}; text-shadow: 0 0 10px #000000,  0 0 10px #ffffff;"></i>
+                                        <i class="{{i!First Character Icon!}} tooltipster" title="{{!First Character Name!}}" style="font-size:1rem; position: absolute; left: calc({{n%First Character Value%}}%); color: {{c!First Character Colour!}}; text-shadow: 0 0 10px #000000,  0 0 10px #ffffff;"></i>
+                                    </div>
+                                    <div class="col align-items-center justify-content-center">
+                                        <p>{{%Right Stat%}}</p>
+                                    </div>
+                                </div>
+
+<br>
+%end%}}
+        
+    </div>
+ </div>
+ 
+<hr width="50%" noshade style="color:#ffffff" align="center" />
+
+<!-- likes / interests -->
+<div class="col">
+    
+<div class="row align-items-center justify-content-center">
+    
+        <div class="col-5 collapse m-2 p-2 border-0" id="likes_one" style="background-color:{{c!Background Colour!}}; transition-duration:0.5s;">
+            <p class="font-italic" style="font-variant:small-caps; font-size:1rem;">{{!First Character Name!}}'s likes</p>
+            <hr width="50%" noshade style="color:#ffffff" align="left" />
+        <p>
+          {{%First Character Likes%
+            <i class="{{i!First Character Icon!}}" style="font-size:1rem; color: {{c!First Character Colour!}};"></i> &nbsp; {{%First Character Like%}} <br>
+            %end%}}
+        </p>
+        </div>
+    
+        <div class="col-5 collapse m-2 p-2 border-0" id="likes_two" style="background-color:{{c!Background Colour!}}; transition-duration:0.5s;">
+            <p class="font-weight-bold" style="font-variant:small-caps; font-size:1rem;"> {{!Second Character Name!}}'s likes </p>
+            <hr width="50%" noshade style="color:#ffffff" align="left" />
+        <p>
+            {{%Second Character Likes%
+            <i class="{{i!Second Character Icon!}}" style="font-size:1rem; color: {{c!Second Character Colour!}}; "></i> &nbsp; {{%Second Character Like%}} <br>
+          %end%}}
+        </div>
+    </div>
+
+
+<!-- moodboard -->
+<div class="row" style="height:90px;">
+{%%Moodboard%
+  <div class="col py-2" style="background:url({{u%Moodboard Image One%}}) left; background-size: cover;"></div>
+  <div class="col p-4" style="background:url({{u%Moodboard Image Two%}}) center; background-size: cover;"></div>
+  <div class="col py-2" style="background:url({{u%Moodboard Image Three%%}}) bottom; background-size: cover;"></div>
+  <div class="col p-4" style="background:url({{u%Moodboard Image Four%}}) center; background-size: cover;"></div>
+  %end%}}
+</div>
+
+<div class="row align-items-center justify-content-center">
+        <div class="col-5 collapse m-2 p-2 border-0" id="interests_one" style="background-color:{{c!Background Colour!}}; transition-duration:0.5s;">
+            <p class="font-italic" style="font-variant:small-caps; font-size:1rem;">{{!First Character Name!}} trivia</p>
+            <hr width="50%" noshade style="color:#ffffff" align="left" />
+        <p>
+          {{%First Character Trivia%
+            <i class="{{i!First Character Icon!}}" style="font-size:1rem; color: {{c!First Character Colour!}};"></i> &nbsp; {{%First Character Fact%}} <br>
+            %end%}}
+        </p>
+        </div>
+
+
+        <div class="col-5 collapse m-2 p-2 border-0" id="interests_two" style="background-color:{{c!Background Colour!}}; transition-duration:0.5s;">
+            <p class="font-weight-bold" style="font-variant:small-caps; font-size:1rem;"> {{!Second Character Name!}} trivia </p>
+            <hr width="50%" noshade style="color:#ffffff" align="left" />
+        <p>
+          {{%Second Character Trivia%
+            <i class="{{i!Second Character Icon!}}" style="font-size:1rem; color: {{c!Second Character Colour!}}; "></i> &nbsp; {{%Second Character Fact%}} <br>
+            %end%}}
+        </p>
+        </div>
+    
+</div>
+
+
+    
+</div>
+
+</div>  
+
+<!-- second character image -->
+<div class="col-12 col-md-3 p-3">
+    
+    <!-- second character's likes -->
+    <a class="btn btn-default border-0 nav-link bg-transparent" style="color:#ffffff; width:1px; height:1px;" data-toggle="collapse" href="#likes_two" role="button" aria-expanded="false" aria-controls="collapseExample">
+    <i class="fad fa-heart-half-stroke fa-flip-horizontal float-left tooltipster" data-placement="right" title="{{!Second Character Name!}}'s likes" style="font-size:3rem; margin-left:-54px; margin-top:135px; color:{{c!Second Character Colour!}}; text-shadow: 0 0 10px #000000, 0 0 0px #000000, 0 0 0px #000000, 0 0 10px #000000;"></i>
+    </a> 	
+    
+   <p align="right"><img src="{{u!Second Character Image!}}" width="300"></p>
+    
+    <!-- second character trivia -->
+    <a class="btn btn-default border-0 nav-link bg-transparent" style="color:#ffffff; width:1px; height:1px;" data-toggle="collapse" href="#interests_two" role="button" aria-expanded="false" aria-controls="collapseExample">
+    <i class="{{i!Second Character Icon!}} float-left tooltipster" data-placement="right" title="{{!Second Character Name!}} trivia"  style="font-size:3rem;  margin-left:-50px; margin-top:15px; color:{{c!Second Character Colour!}}; text-shadow: 0 0 10px #000000, 0 0 0px #000000, 0 0 0px #000000, 0 0 10px #000000;"></i>
+</a>
+</div>   
+        
+    </div>
+</div>
+
+<br>
+<p align="center"><a href="https://toyhou.se/sonneambedo" class="tooltipster" title="code by s☼nne"><i class="fas fa-sun" style="color:#FFD700"></i></a></p>
